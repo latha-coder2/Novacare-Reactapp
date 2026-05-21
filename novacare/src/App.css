@@ -1,10 +1,11 @@
-/* src/App.css */
 .app-container {
   display: flex;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8fafc;
 }
+
+
 
 .sidebar {
   width: 260px;
@@ -27,7 +28,18 @@
   gap: 12px;
   margin-top: 30px;
   flex: 1;
+  font-size: 20px;
 }
+
+.listcontent{
+  list-style-type: none;
+}
+
+.linkcontent{
+  text-decoration: none;
+  color: #94a3b8;
+}
+
 
 .nav-button {
   padding: 12px;
@@ -200,7 +212,7 @@
   align-items: center;
   min-height: 100vh;
   width: 100vw;
-  background-color: #f1f5f9;
+  background-image: linear-gradient(rgb(100, 166, 227),rgb(73, 80, 216));
 }
 
 .login-box {

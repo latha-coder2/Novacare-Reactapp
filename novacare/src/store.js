@@ -1,4 +1,4 @@
-// src/store.js
+
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 import { initialPatients, mockUsers } from './mockData';
 
@@ -35,7 +35,7 @@ const clinicSlice = createSlice({
       const { patientId, newVisit } = action.payload;
       const patient = state.patients.find(p => p.id === patientId);
       if (patient) {
-        patient.visits.unshift(newVisit); // Create (CRUD)
+        patient.visits.unshift(newVisit); // Create 
         localStorage.setItem('medconnect_patients', JSON.stringify(state.patients));
       }
     },
@@ -45,7 +45,7 @@ const clinicSlice = createSlice({
       if (patient) {
         const visit = patient.visits.find(v => v.visitId === visitId);
         if (visit) {
-          visit.diagnosis = diagnosis; // Update (CRUD)
+          visit.diagnosis = diagnosis; // Update 
           visit.notes = notes;
           localStorage.setItem('medconnect_patients', JSON.stringify(state.patients));
         }
@@ -55,7 +55,7 @@ const clinicSlice = createSlice({
       const { patientId, visitId } = action.payload;
       const patient = state.patients.find(p => p.id === patientId);
       if (patient) {
-        patient.visits = patient.visits.filter(v => v.visitId !== visitId); // Delete (CRUD)
+        patient.visits = patient.visits.filter(v => v.visitId !== visitId); // Delete
         localStorage.setItem('medconnect_patients', JSON.stringify(state.patients));
       }
     },

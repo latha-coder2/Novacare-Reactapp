@@ -1,4 +1,3 @@
-// src/mockData.js
 export const mockUsers = [
   { username: "doctor1", password: "123", role: "doctor" },
   { username: "vijay", password: "123", role: "patient", patientId: "1" },

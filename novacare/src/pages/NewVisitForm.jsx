@@ -1,4 +1,3 @@
-// src/pages/NewVisitForm.jsx
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addVisitLog } from '../store';
