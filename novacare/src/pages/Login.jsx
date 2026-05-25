@@ -57,7 +57,7 @@ function Login() {
   return (
     <div className="login-bg">
       <div className="login-box" style={{ maxWidth: isRegisterMode && role === 'patient' ? '500px' : '400px' }}>
-        <h2 className="login-title">🏥 MedConnect</h2>
+        <h2 className="login-title">🏥 NovaCare</h2>
         <form onSubmit={handleAuthSubmit}>
           <div className="form-group">
             <label className="form-label">Username</label>

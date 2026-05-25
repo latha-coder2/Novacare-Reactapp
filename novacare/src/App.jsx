@@ -24,7 +24,7 @@ export default function App() {
     return (
       <div className="app-container" style={{ flexDirection: 'column' }}>
         <header style={{ background: '#1e293b', color: 'white', padding: '15px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <h2>🏥 MedConnect Client Hub</h2>
+          <h2>🏥 NovaCare Client Hub</h2>
           <button className="nav-button logout-btn" onClick={() => dispatch(logoutUser())} style={{ padding: '8px 16px' }}>Logout</button>
         </header>
         <main className="main-content">
@@ -38,7 +38,7 @@ export default function App() {
     <BrowserRouter>
     <div className="app-container">
       <nav className="sidebar">
-        <h2 className="sidebar-title">🏥 MedConnect</h2>
+        <h2 className="sidebar-title">🏥 NovaCare</h2>
         <p style={{ color: '#cbd5e1', fontSize: '14px' }}>Dr. {currentUser.username}</p>
         <div className="sidebar-nav-list">
           {/* <button onClick={() => 

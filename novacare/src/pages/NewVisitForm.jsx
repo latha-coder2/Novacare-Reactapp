@@ -31,6 +31,12 @@ export default function NewVisitForm({ goToScreen }) {
     };
 
     dispatch(addVisitLog({ patientId: selectedPatientId, newVisit }));
+    alert("visit Logged");
+    setSelectedPatientId("");
+    setDiagnosis("");
+    setSymptom("");
+    setNotes("");
+    setMedicines("");
     goToScreen('dashboard');
   };
 
